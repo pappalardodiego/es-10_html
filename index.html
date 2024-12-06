@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUGOMABOBA Squad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(165, 42, 42, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .susteam-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            background-color: #800000; 
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .susteam-link:hover {
+            background-color: #a52a2a;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .member {
+            border: 2px solid #800000; 
+            border-radius: 10px;
+            padding: 10px;
+            background-color: white;
+            width: 200px;
+            text-align: center;
+        }
+        .member img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .pokemon-stats {
+            margin-top: 10px;
+            text-align: left;
+            font-size: 14px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #800000; 
+            border-radius: 10px;
+        }
+        .checklist {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff8e1; /* Giallo chiaro */
+            border-radius: 10px;
+            border: 2px solid #800000; /* Bordeaux */
+        }
+        .checklist h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #800000;
+        }
+        .checklist ol, .checklist ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .checklist li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: rgba(165, 42, 42, 0.9); 
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SUGOMABOBA Squad</h1>
+        <p>Diego, Florin e Tilotta - Sempre sus, BobaRiba!</p>
+    </header>
+
+    <div class="container">
+        <!-- Sezione Team -->
+        <h2>SUSTEAM</h2>
+        <a href="https://it.wikipedia.org/wiki/Sus" class="susteam-link" target="_blank">Scopri di più su "Sus" su Wikipedia</a>
+        <div class="team">
+            <div class="member">
+                <img src="images/diego-script-es1.jpg" alt="Foto di Diego" />
+                <h3>Diego</h3>
+                <p>Il mastermind del gruppo. Sempre pronto a susare!</p>
+                <div class="pokemon-stats">
+                    <strong>Tipo:</strong> Meme Master<br>
+                    <strong>Mosse:</strong> Sus Cannon, Sugoma Blast, Amogus Stare<br>
+                    <strong>Abilità:</strong> +50 carisma sotto pressione<br>
+                    <strong>Debolezza:</strong> Non può resistere a un meme cringe
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/florin-script-es1.jpg" alt="Foto di Florin" />
+                <h3>Florin</h3>
+                <p>Il cuore del gruppo. Bobariba in persona.</p>
+                <div class="pokemon-stats">
+                    <strong>Tipo:</strong> Meme Healer<br>
+                    <strong>Mosse:</strong> Bobariba Punch, Sugoma Shield, Sus Shock<br>
+                    <strong>Abilità:</strong> Ricarica morale con battute<br>
+                    <strong>Debolezza:</strong> Meme senza senso
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/tilotta-script-es1.jpg" alt="Foto di Tilotta" />
+                <h3>Tilotta</h3>
+                <p>Il re dei meme. SusBus vibes garantiti!</p>
+                <div class="pokemon-stats">
+                    <strong>Tipo:</strong> Meme Tank<br>
+                    <strong>Mosse:</strong> Sus Smash, Amogus Beam, Bus Bash<br>
+                    <strong>Abilità:</strong> Immunità totale ai cringe<br>
+                    <strong>Debolezza:</strong> Nessuna
+                </div>
+            </div>
+        </div>
+
+        <h2>Galleria MemeSus</h2>
+        <div class="gallery" id="gallery"></div>
+
+        <h2>Sugoma Checklist</h2>
+        <div class="checklist">
+            <h3>Obiettivi del team:</h3>
+            <ol>
+                <li>Creare nuovi meme ogni settimana</li>
+                <li>Raggiungere il livello massimo di Sugoma</li>
+                <li>Conquistare il titolo di "Meme Master" da Monsus</li>
+            </ol>
+
+            <h3>Regole della SUGOMABOBA Squad:</h3>
+            <ul>
+                <li>Mantenere sempre alto il livello di SUS</li>
+                <li>Giocare a MakeItMeme, sempre</li>
+                <li>Mai abbandonare il Bus</li>
+                <li>Onorare il Profeta Montante</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 SUGOMABOBA - Sempre sus, mai Bus! 🚀</p>
+    </footer>
+
+    <script>
+        const imageFolder = 'meme/';
+        const memeCount = 19;
+
+        const gallery = document.getElementById('gallery');
+        for (let i = 1; i <= memeCount; i++) {
+            const imgElement = document.createElement('img');
+            imgElement.src = `${imageFolder}meme${i}.jpeg`; 
+            imgElement.alt = `Meme ${i}`;
+            gallery.appendChild(imgElement);
+        }
+    </script>
+</body>
+</html>
